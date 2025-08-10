@@ -53,6 +53,33 @@ footer a {
   background-image: url(/images/background-2.PNG);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center 50px;
+  background-position: center 40px;
   height: 100vh;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  img {
+    width: 30%;
+  }
+
+  footer {
+    margin: 30px;
+    font-size: 10px;
+  }
+
+  .hero-container {
+    margin-top: 90px;
+  }
+
+  .line-1 {
+    height: 30px;
+  }
 }
