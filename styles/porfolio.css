@@ -1,7 +1,9 @@
 :root {
   --primary-color: #a130fc;
+  --secondary-color: #d7a5fe;
   --heading-font-family: "Poppins", sans-serif;
   --paragraph-font-family: "Italiana", sans-serif;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
@@ -15,17 +17,20 @@ h1 {
 h2 {
   font-family: var(--paragraph-font-family);
   font-weight: 600;
-  font-style: normal;
   font-style: italic;
   font-size: 24px;
 }
 
-img {
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  border: 2px solid black;
-  padding: 2px;
+h3 {
+  font-family: var(--heading-font-family);
+  font-size: 44px;
+}
+
+p {
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.5;
 }
 
 footer {
@@ -35,6 +40,14 @@ footer {
 footer a {
   text-decoration: none;
   color: var(--primary-color);
+}
+
+.weronika-thumbnail {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid black;
+  padding: 2px;
 }
 
 .line-1 {
@@ -47,6 +60,7 @@ footer a {
 .hero-container {
   margin-top: 180px;
   font-family: var(--heading-font-family);
+  margin-bottom: 150px;
 }
 
 .hero-background {
@@ -55,6 +69,16 @@ footer a {
   background-size: contain;
   background-position: center 40px;
   height: 100vh;
+}
+
+.btn-branding {
+  background-color: var(--primary-color);
+  color: #ffff;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  box-shadow: var(--box-shadow);
 }
 
 @media (max-width: 768px) {
@@ -66,7 +90,15 @@ footer a {
     font-size: 15px;
   }
 
-  img {
+  h3 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .weronika-thumbnail {
     width: 30%;
   }
 
@@ -77,6 +109,7 @@ footer a {
 
   .hero-container {
     margin-top: 90px;
+    margin-bottom: 40px;
   }
 
   .line-1 {
