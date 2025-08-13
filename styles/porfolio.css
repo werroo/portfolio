@@ -34,25 +34,46 @@ p {
 }
 
 footer {
-  margin-top: 100px;
+  color: black;
+  margin-top: auto;
+  margin-bottom: 3px;
+  font-size: 16px;
 }
 
 footer a {
   text-decoration: none;
   color: var(--primary-color);
+  font-weight: bold;
 }
 
 .weronika-thumbnail {
   display: block;
   margin: 0 auto;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 3px solid black;
   padding: 2px;
+}
+
+.weronika-thumbnail-about {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 50%;
+  padding: 2px;
+  width: 200px;
+  height: 200px;
 }
 
 .line-1 {
   background-color: black;
   height: 54px;
+  width: 3px;
+  margin: 0 auto;
+}
+
+.line-2 {
+  background-color: black;
+  height: 64px;
   width: 3px;
   margin: 0 auto;
 }
@@ -64,11 +85,27 @@ footer a {
 }
 
 .hero-background {
-  background-image: url(/images/background-2.PNG);
+  background-image: url(/images/background-image-4.PNG);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center 40px;
+  background-position: center 80px;
   height: 100vh;
+}
+
+.about-heading-container {
+  margin-top: 180px;
+}
+
+.about-background {
+  background-image: url(/images/Thumbnail.PNG);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center -100px;
+}
+
+.about-paragraph {
+  margin-top: 30px;
+  padding: 0 200px;
 }
 
 .btn-branding {
@@ -114,5 +151,9 @@ footer a {
 
   .line-1 {
     height: 30px;
+  }
+
+  .about-paragraph {
+    padding: 0 30px;
   }
 }
