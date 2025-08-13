@@ -6,6 +6,12 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 h1 {
   color: black;
   font-family: var(--heading-font-family);
@@ -40,7 +46,8 @@ footer {
   font-size: 16px;
 }
 
-footer a {
+footer,
+a {
   text-decoration: none;
   color: var(--primary-color);
   font-weight: bold;
@@ -85,7 +92,7 @@ footer a {
 }
 
 .hero-background {
-  background-image: url(/images/background-image-4.PNG);
+  background-image: url(/images/Index-background-image.PNG);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center 80px;
@@ -97,7 +104,7 @@ footer a {
 }
 
 .about-background {
-  background-image: url(/images/Thumbnail.PNG);
+  background-image: url(/images/About-background-image.PNG);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center -100px;
@@ -120,6 +127,26 @@ footer a {
 
 .btn-branding:hover {
   background-color: var(--secondary-color);
+  color: #ffff;
+}
+
+.contact-background {
+  background-image: url(/images/Contact-background-image.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+}
+
+.contact-icon {
+  color: #a130fc;
+}
+
+.contact-links {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 150ms ease-in-out #ffff;
 }
 
 @media (max-width: 768px) {
