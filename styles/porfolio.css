@@ -118,6 +118,12 @@ footer a {
   box-shadow: var(--box-shadow);
 }
 
+.btn-about {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 30px;
