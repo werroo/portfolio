@@ -12,6 +12,23 @@ body {
   min-height: 100vh;
 }
 
+nav {
+  font-family: var(--heading-font-family);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--primary-color);
+}
+
+.nav-link {
+  color: black;
+  transition: all 150ms ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
 h1 {
   color: black;
   font-family: var(--heading-font-family);
@@ -50,6 +67,10 @@ footer a {
   text-decoration: none;
   color: var(--primary-color);
   font-weight: bold;
+}
+
+.wero-logo {
+  width: 65px;
 }
 
 .weronika-thumbnail {
