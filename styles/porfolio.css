@@ -1,6 +1,6 @@
 :root {
   --primary-color: #a130fc;
-  --secondary-color: #d7a5fe;
+  --secondary-color: #eccfff;
   --heading-font-family: "Poppins", sans-serif;
   --paragraph-font-family: "Italiana", sans-serif;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -61,6 +61,7 @@ footer {
   margin-top: auto;
   margin-bottom: 3px;
   font-size: 16px;
+  font-family: var(--heading-font-family);
 }
 
 footer a {
@@ -166,7 +167,35 @@ footer a {
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
-  transition: all 150ms ease-in-out #ffff;
+  transition: all 100ms ease-in-out #ffff;
+}
+
+.contact-links:hover {
+  color: var(--primary-color);
+}
+
+.email-link {
+  font-size: 24px;
+  color: black;
+  transition: all 100ms ease-in-out;
+}
+
+.email-link:hover {
+  color: var(--primary-color);
+}
+
+.icon-links a {
+  padding: 14px 11px 14px 13px;
+  background-color: var(--secondary-color);
+  margin: 0 20px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: all 100ms ease-in-out;
+}
+
+.icon-links a:hover {
+  background-color: var(--primary-color);
+  color: #ffff;
 }
 
 @media (max-width: 768px) {
